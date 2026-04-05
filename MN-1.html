@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1CyberAttack | Official Channel</title>
+    <style>
+        /* Modern Cyber-Security Dark Theme */
+        :root {
+            --cyber-red: #ff0000;
+            --bg-black: #0a0a0a;
+            --card-bg: #161616;
+            --text-white: #ffffff;
+            --text-gray: #888888;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-black);
+            color: var(--text-white);
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header */
+        header {
+            background-color: rgba(0, 0, 0, 0.9);
+            padding: 15px 5%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 2px solid var(--cyber-red);
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .logo-img {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            border: 1px solid var(--cyber-red);
+            object-fit: cover;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 1.4rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        /* Hero Banner */
+        .hero {
+            height: 250px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                        url('https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=1200&q=80');
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+        }
+
+        .hero h2 {
+            font-size: 3rem;
+            margin: 0;
+            color: var(--cyber-red);
+            text-shadow: 0 0 10px rgba(255,0,0,0.5);
+        }
+
+        /* Video Section */
+        .container {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 0 20px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border-radius: 12px;
+            overflow: hidden;
+            transition: transform 0.3s ease, border 0.3s ease;
+            border: 1px solid #222;
+            text-decoration: none;
+            color: white;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            border-color: var(--cyber-red);
+        }
+
+        .thumb-wrap {
+            position: relative;
+            width: 100%;
+        }
+
+        .thumb-wrap img {
+            width: 100%;
+            display: block;
+        }
+
+        /* Play Button Icon */
+        .play-overlay {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: rgba(255, 0, 0, 0.8);
+            width: 60px;
+            height: 40px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: 0.3s;
+        }
+
+        .card:hover .play-overlay {
+            opacity: 1;
+        }
+
+        .play-overlay::after {
+            content: '';
+            border-style: solid;
+            border-width: 8px 0 8px 14px;
+            border-color: transparent transparent transparent white;
+        }
+
+        .card-info {
+            padding: 20px;
+        }
+
+        .card-info h3 {
+            margin: 0 0 10px;
+            font-size: 1.1rem;
+            color: var(--text-white);
+        }
+
+        .card-info p {
+            color: var(--text-gray);
+            font-size: 0.9rem;
+            margin: 0;
+            line-height: 1.4;
+        }
+
+        /* Subscribe Button */
+        .sub-btn {
+            display: block;
+            width: fit-content;
+            margin: 50px auto;
+            background: var(--cyber-red);
+            color: white;
+            padding: 15px 40px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: 0.3s;
+        }
+
+        .sub-btn:hover {
+            background: #b30000;
+            box-shadow: 0 0 20px rgba(255,0,0,0.4);
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            border-top: 1px solid #222;
+            color: var(--text-gray);
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="brand">
+            <img src="https://yt3.googleusercontent.com/lyX2HgQ3DvYPIGRddb0JzggF5nLXIjxznHDdknpsSAZgQirzqnZyS0h3XzuY9cw0S0yGedPBDA=s160-c-k-c0x00ffffff-no-rj" alt="1CyberAttack Logo" class="logo-img" onerror="this.src='https://www.youtube.com/favicon.ico'">
+            <h1>1CyberAttack</h1>
+        </div>
+        <a href="https://www.youtube.com/@mohamednassar_97" target="_blank" style="color:white; text-decoration:none; font-weight:bold;">CHANNEL</a>
+    </header>
+
+    <section class="hero">
+        <h2>1CyberAttack</h2>
+        <p>Advanced Security Insights & Tech Content</p>
+    </section>
+
+    <div class="container">
+        <div class="grid">
+            
+            <a href="https://www.youtube.com/watch?v=XUiGAYrfrSk" class="card" target="_blank">
+                <div class="thumb-wrap">
+                    <img src="https://img.youtube.com/vi/XUiGAYrfrSk/maxresdefault.jpg" alt="Video Thumbnail">
+                    <div class="play-overlay"></div>
+                </div>
+                <div class="card-info">
+                    <h3>Latest Cyber Security Review</h3>
+                    <p>Watch our detailed breakdown of recent tech updates on the 1CyberAttack channel.</p>
+                </div>
+            </a>
+
+            <a href="https://www.youtube.com/watch?v=uSJJjRVgwu4" class="card" target="_blank">
+                <div class="thumb-wrap">
+                    <img src="https://img.youtube.com/vi/uSJJjRVgwu4/maxresdefault.jpg" alt="Video Thumbnail">
+                    <div class="play-overlay"></div>
+                </div>
+                <div class="card-info">
+                    <h3>Deep Dive & Unboxing</h3>
+                    <p>Testing the performance and security features of new hardware. Exclusive to 1CyberAttack.</p>
+                </div>
+            </a>
+
+            <a href="https://www.youtube.com/watch?v=v9g9XFAHM4w" class="card" target="_blank">
+                <div class="thumb-wrap">
+                    <img src="https://img.youtube.com/vi/v9g9XFAHM4w/maxresdefault.jpg" alt="Video Thumbnail">
+                    <div class="play-overlay"></div>
+                </div>
+                <div class="card-info">
+                    <h3>Creator Essentials 2026</h3>
+                    <p>Top tips for managing your channel and content securely. Watch now on YouTube.</p>
+                </div>
+            </a>
+
+        </div>
+
+        <a href="https://www.youtube.com/@mohamednassar_97?sub_confirmation=1" class="sub-btn" target="_blank">SUBSCRIBE TO 1CyberAttack</a>
+    </div>
+
+    <footer>
+        © 2026 1CyberAttack | Secure Content for Everyone
+    </footer>
+
+</body>
+</html>
